@@ -10,25 +10,28 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all" />
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="/asseets/favicon/ico">
     </head>
+  
     <body>
 
     <!-- header section starts  -->
 
-    <header>
+    <header data-aos="zoom-in" >
 
         <input type="checkbox" name="" id="toggler">
         <label for="toggler" class="fas fa-bars"></label>
     <a href=""><img class="logo" style="height: 50px;"    src="images/juryalogoa.png" alt=""></a>
         <!-- <a href="#" class="logo">JURY</a> -->
 
-        <nav class="navbar">  
+        <nav  class="navbar">  
         <a href="#home">home</a> 
-        <a href="#products">products</a>
-        <a href="#review">review</a>
-        <a href="#about">about</a>
+        <!-- <a href=" Product.html">products</a> -->   
         <a href="#repair">Repair service</a>
+          <a href="#review">review</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
         </nav>
 
         <div class="icons">
@@ -46,8 +49,7 @@
     <section class="home" id="home">
 
         <div class="content">
-            <h3>JURY
-            <span> Communication</span></h3>
+            <h3 >JURY Communication </h3>
             <p>Repair service & Gadgets service</p>
             <hr>
             <a href="#about" class="btn">see more</a>
@@ -62,7 +64,7 @@
 
     <section class="icons-container">
 
-        <div class="icons">
+        <div data-aos="fade-right" data-aos-delay="50.s" class="icons">
             <img src="images/icon-1.png" alt="">
             <div class="info">
                 <h3>free delivery</h3>
@@ -70,7 +72,7 @@
             </div>
         </div>
 
-        <div class="icons">
+        <div data-aos="zoom-in" class="icons">
             <img src="images/icon-2.png" alt="">
             <div class="info">
                 <h3>With warranty</h3>
@@ -78,7 +80,7 @@
             </div>
         </div>
 
-        <div class="icons">
+        <div data-aos="fade-left" data-aos-delay="100" class="icons">
             <img src="images/icon-3.png" alt="">
             <div class="info">
                 <h3>offer & more</h3>
@@ -97,8 +99,8 @@
     </section>
 
     <!-- icons section ends -->
-
-    <!-- prodcuts section starts  -->
+<!-- 
+   
 
     <section class="products" id="products">
 
@@ -211,16 +213,86 @@
                     <div class="price"> $100 <span>$200</span> </div>
                 </div>
             </div>
-            <!-- aaaaaaaaaaaaaaaaa -->
+    
 
 
         </div>
 
-    </section>
+    </section> -->
 
     <!-- prodcuts section ends -->
 
-    <!-- review section starts  -->
+   
+    <!-- about section starts  -->
+
+    <section class="about" id="repair">
+
+        <h1 class="heading"> <span> Our </span> Skilled tecnicians </h1>
+        
+        <div class="row-img">
+
+            <div data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="90"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false" class="video-container" data-aos="fade-right">
+                <img src="/images/pic-1.png" alt="" srcset=""class="img-tecnicians">
+                <!-- <h3> Skilled technicians <span  class="fas fa-heart"></span></h3> -->
+            </div>
+
+            <div class="content">
+                <h3> Our technicians </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</p>
+                <a  
+              href="#" class="btn">see more</a>
+            </div>
+            </div>
+        <div class="row-img">
+
+            <div data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="90"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false" class="video-container" data-aos="fade-right">
+                <img src="/images/pic-1.png" alt="" srcset=""class="img-tecnicians">
+                <!-- <h3> Skilled technicians <span  class="fas fa-heart"></span></h3> -->
+            </div>
+
+            <div class="content">
+                <h3> Our technicians </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</p>
+                <a  
+             href="#" class="btn">see more</a>
+            </div>
+</div>
+            <div class="row-img">
+
+                <div data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-delay="90"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false" class="video-container" data-aos="fade-right">
+                    <img src="/images/pic-1.png" alt="" srcset=""class="img-tecnicians">
+                    <!-- <h3> Skilled technicians <span  class="fas fa-heart"></span></h3> -->
+                </div>
+    
+                <div class="content">
+                    <h3> Our technicians </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</p>
+                    <a  
+                     href="#" class="btn">see more</a>
+                </div>
+    
+
+     </div>
+
+    </section>
+
+    <!-- about section ends -->
+         <!-- review section starts  -->
 
     <section class="review" id="review">
 
@@ -228,7 +300,7 @@
 
     <div class="box-container">
 
-        <div class="box">
+        <div data-aos="fade-right"class="box">
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -247,7 +319,7 @@
             <span class="fas fa-quote-right"></span>
         </div>
 
-        <div class="box">
+        <div data-aos="fade-right"class="box">
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -266,7 +338,7 @@
             <span class="fas fa-quote-right"></span>
         </div>
 
-        <div class="box">
+        <div data-aos="fade-right"class="box">
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -293,40 +365,15 @@
 
     <!-- about section starts  -->
 
-    <section class="about" id="repair">
-
-        <h1 class="heading"> <span> Repair </span> service </h1>
-
-        <div class="row">
-
-            <div class="video-container">
-                <video src="images/about-vid.mp4" loop autoplay muted></video>
-                <h3> Skilled technicians <span  class="fas fa-heart"></span></h3>
-            </div>
-
-            <div class="content">
-                <h3> Our technicians </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- about section ends -->
-    <!-- about section starts  -->
-
     <section class="about" id="about">
 
         <h1 class="heading"> <span> about </span> us </h1>
 
-        <div class="row">
+        <div data-aos="fade-left" class="row">
 
             <div class="video-container">
-                <video src="images/about-vid.mp4" loop autoplay muted></video>
-                <h3> OUR MOTTO <span  class="fas fa-heart"></span></h3>
+                    <img width="150rem" src="/images/119156337_1216329935402428_9033925571605195426_n.jpg" alt="">
+                <h3> OUR M <span  class="fas fa-heart"></span></h3>
             </div>
 
             <div class="content">
@@ -347,15 +394,15 @@
 
         <h1 class="heading"> <span> contact </span> us </h1>
 
-        <div class="row">
+        <div  class="row">
 
-            <form action="">
+            <form data-aos="fade-right"action="">
                 <input type="facebook" placeholder="Facebook name" class="box">
                 <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
                 <input type="submit" value="send message" class="btn">
             </form>
 
-            <div class="image">
+            <div data-aos="fade-left"class="image">
                 <img src="/images/119156337_1216329935402428_9033925571605195426_n.jpg" alt="">
             </div>
 
@@ -364,7 +411,7 @@
     </section>
 
     <!-- contact section ends -->
-
+                 
     <!-- footer section starts  -->
 
     <section class="footer">
@@ -374,7 +421,7 @@
             <div class="box">
                 <h3>quick links</h3>
                 <a href="#home">home</a>
-                <a href="#product">products</a>
+                <!-- <a href="#product">products</a> -->
                 <a href="#">review</a>
                 <a href="#about">about</a>
                 <a href="#repair">repair service</a>
@@ -421,26 +468,25 @@
 
 
 
+    <script src="scroll-out.js"></script>
+    <script type="text/javascript">
+        ScrollOut({
+            targets: 'h3,p'
+        })
+    
+    </script>
 
 
 
 
 
-<!-- 
-<a href="#"><button  style=" position: fixed;
-   right: 10px;
-   bottom: 10px;
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   background-color: #0066ff;
-   box-shadow: 0 0 10px rgb(0, 0, 0.25);
-   color: #ffffff;
-   outline: none;
-   cursor: pointer;" id="btnScrollToTop"
-   >
-       <i class="material-icons">up</i>
-   </button></a>    -->
+     
    <script id="6169b6535c0d8c34d1ac9236" src="https://dashboard.chatfuel.com/integration/fb-entry-point.js" async defer></script>
-    </body> 
-</html>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+ 
+   
+ </body> 
+</html

@@ -49,82 +49,8 @@ document.querySelectorAll('.small-image-3').forEach(images =>{
     }
 });
 
-let countDate = new Date('aug 1, 2021 00:00:00').getTime();
-
-function countDown(){
-
-    let now = new Date().getTime();
-	gap = countDate - now;
-
-    let seconds = 1000;
-    let minutes = seconds * 60;
-    let hours = minutes * 60;
-    let days = hours * 24;
-
-    let d = Math.floor(gap / (days));
-	let h = Math.floor((gap % (days)) / (hours));
-	let m = Math.floor((gap % (hours)) / (minutes));
-	let s = Math.floor((gap % (minutes)) / (seconds));
-
-    document.getElementById('days').innerText = d;
-    document.getElementById('hours').innerText = h;
-    document.getElementById('minutes').innerText = m;
-    document.getElementById('seconds').innerText = s;
-
-}
-
-setInterval(function(){
-    countDown()
-},1000);
-
-var swiper = new Swiper(".product-slider", {
-    slidesPerView: 3,
-    loop:true,
-    spaceBetween: 10,
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        550: {
-          slidesPerView: 2,
-        },
-        800: {
-          slidesPerView: 3,
-        },
-        1000: {
-            slidesPerView: 3,
-        },
-    },
-});
-
-var swiper = new Swiper(".review-slider", {
-    slidesPerView: 3,
-    loop:true,
-    spaceBetween: 10,
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        550: {
-          slidesPerView: 2,
-        },
-        800: {
-          slidesPerView: 3,
-        },
-        1000: {
-            slidesPerView: 3,
-        },
-    },
-});
+AOS.init({
+    offset: 400, 
+    delay: 0, 
+    duration: 1000 
+  });
